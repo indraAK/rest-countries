@@ -1,0 +1,65 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  height: 100%;
+}
+
+.card-country .card-header {
+  display: block;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+}
+
+.card-country img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  @apply text-[#111517];
+}
+
+.card ul li:not(:last-child) {
+  @apply mb-1;
+}
+
+.card li {
+  @apply dark:text-white font-semibold text-[15px];
+}
+
+.card li span {
+  @apply dark:text-light font-normal;
+}
+
+/* loader */
+.loader {
+  border: 3px solid #dfdfdf;
+  border-top-color: #c7c7c7;
+  border-right-color: #c7c7c7;
+  animation: spin 1s linear infinite;
+}
+
+.card-detail .info li {
+  @apply dark:text-white mb-1 font-semibold text-dark-default;
+}
+
+.card-detail .info li span {
+  @apply dark:text-white font-normal;
+}
+
+.card-detail .badge {
+  @apply dark:bg-dark-default dark:text-white min-w-[80px] mr-2 mb-2 py-2 px-3 bg-white text-dark-primary flex items-center justify-center border-dark-primary shadow rounded text-sm;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
