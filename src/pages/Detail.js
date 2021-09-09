@@ -26,10 +26,12 @@ const Detail = () => {
       )
     : [null];
 
-  const borderCountries = country?.borders.map((alpha3Code) => {
+  const borderCountries = [];
+
+  country?.borders.forEach((alpha3Code) => {
     for (const item of countries) {
       if (item.alpha3Code.toLowerCase() === alpha3Code.toLowerCase()) {
-        return item;
+        borderCountries.push(item);
       }
     }
   });
