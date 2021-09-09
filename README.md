@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://optimistic-brown-d5a8fd.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://www.frontendmentor.io/solutions/responsive-rest-countries-api-using-react-and-tailwind-4Qnl8HASg">
       Solution
     </a>
     <span> | </span>
